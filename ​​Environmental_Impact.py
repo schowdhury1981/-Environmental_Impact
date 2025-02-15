@@ -17,6 +17,9 @@ relevant_columns = [
 data_subset = data[relevant_columns]
 
 # Encode the 'label' column (categorical data)
+# Encode the 'label' column (categorical data)
+# Encode the 'label' column (categorical data)
+# Encode the 'label' column (categorical data)
 label_encoder = LabelEncoder()
 data_subset["label_encoded"] = label_encoder.fit_transform(data_subset["label"])
 data_subset.drop("label", axis=1, inplace=True)
